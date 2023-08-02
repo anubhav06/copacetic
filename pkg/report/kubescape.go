@@ -53,12 +53,16 @@ func (k *KubescapeParser) Parse(file string) (*types.UpdateManifest, error) {
 	}
 
 	// Unmarshal function is not able to detect if the report is in the correct format. It returns no error even if the report is in the wrong format.
-	// Therefore, we check if the report is in the correct format by parsing the APIVersion
-	// If the APIVersion is not in the correct format, report is marked as unsupported and passed on to the next parser
-	apiVersion := strings.Split(report.APIVersion, "/")
-	if apiVersion[0] != "spdx.softwarecomposition.kubescape.io" {
+	// Therefore, we check if the report is in the correct format by parsing the labels
+	// If the label does not contain kubescape.io, then it is not in the correct format, report is marked as unsupported and passed on to the next parser
+	_, ok := report.ObjectMeta.Labels["kubescape.io/context"]
+	if !ok {
 		return nil, &ErrorUnsupported{errors.New("report format not supported by kubescape")}
 	}
+	// apiVersion := strings.Split(report.APIVersion, "/")
+	// if apiVersion[0] != "spdx.softwarecomposition.kubescape.io" {
+	// 	return nil, &ErrorUnsupported{errors.New("report format not supported by kubescape")}
+	// }
 
 	arch, err := getArchitecture(report)
 	if err != nil {
