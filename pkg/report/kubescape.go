@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	kubescapeTypes "github.com/kubescape/storage/pkg/apis/softwarecomposition"
+	kubescapeTypes "github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
 	"github.com/project-copacetic/copacetic/pkg/types"
 )
 
