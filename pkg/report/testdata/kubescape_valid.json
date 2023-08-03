@@ -1,0 +1,34 @@
+{
+    "matches": [
+        {
+            "vulnerability": {
+                "id": "CVE-2022-29458",
+                "namespace": "debian:distro:debian:11",
+                "severity": "High",
+                "fix": {
+                    "versions": [
+                        "6.2+20201114-2+deb11u1"
+                    ],
+                    "state": "fixed"
+                }
+            },
+            "relatedVulnerabilities": [],
+            "matchDetails": [],
+            "artifact": {
+                "id": "25fa96d70063b73d",
+                "name": "libtinfo6",
+                "version": "6.2+20201114-2",
+                "type": "deb",
+                "language": "",
+                "purl": "pkg:deb/debian/libtinfo6@6.2+20201114-2?arch=amd64&upstream=ncurses&distro=debian-11"
+            }
+        }
+    ],
+    "distro": {
+        "name": "debian",
+        "version": "11"
+    },
+    "descriptor": {
+        "name": "grype"
+    }
+}
