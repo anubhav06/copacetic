@@ -1,4 +1,4 @@
-module github.com/project-copacetic/copacetic
+module github.com/anubhav06/copacetic
 
 go 1.20
 
@@ -19,6 +19,7 @@ require (
 	github.com/moby/buildkit v0.12.1
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/image-spec v1.1.0-rc4
+	github.com/project-copacetic/copacetic v0.0.0-00010101000000-000000000000
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
@@ -181,4 +182,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-// replace github.com/project-copacetic/copacetic => github.com/anubhav06/copacetic kubescape
+replace github.com/project-copacetic/copacetic => github.com/anubhav06/copacetic v0.0.0-20230803113751-8b46a290aece
