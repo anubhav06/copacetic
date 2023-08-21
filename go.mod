@@ -1,4 +1,4 @@
-module github.com/anubhav06/copacetic
+module github.com/project-copacetic/copacetic
 
 go 1.20
 
@@ -6,12 +6,13 @@ require (
 	github.com/Masterminds/semver/v3 v3.2.1
 	github.com/anchore/grype v0.65.0
 	github.com/antchfx/xmlquery v1.3.17
-	github.com/aquasecurity/trivy v0.44.0
+	github.com/aquasecurity/trivy v0.44.1
 	github.com/containerd/console v1.0.4-0.20230313162750-1ae8d489ac81
 	github.com/containerd/containerd v1.7.3
+	github.com/cpuguy83/dockercfg v0.3.1
 	github.com/distribution/distribution v2.8.2+incompatible
 	github.com/docker/cli v24.0.5+incompatible
-	github.com/google/go-containerregistry v0.15.2
+	github.com/google/go-containerregistry v0.16.1
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/knqyf263/go-apk-version v0.0.0-20200609155635-041fdbb8563f
 	github.com/knqyf263/go-deb-version v0.0.0-20230223133812-3ed183d23422
@@ -19,7 +20,6 @@ require (
 	github.com/moby/buildkit v0.12.1
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/image-spec v1.1.0-rc4
-	github.com/project-copacetic/copacetic v0.0.0-00010101000000-000000000000
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
@@ -29,6 +29,14 @@ require (
 
 require (
 	dario.cat/mergo v1.0.0 // indirect
+	github.com/sassoftware/go-rpmutils v0.2.0 // indirect
+	github.com/scylladb/go-set v1.0.3-0.20200225121959-cc7b2070d91e // indirect
+	github.com/sergi/go-diff v1.3.1 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20230525234035-dd9d682886f9 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230525234030-28d5490b6b19 // indirect
+)
+
+require (
 	github.com/AdaLogics/go-fuzz-headers v0.0.0-20230106234847-43070de90fa1 // indirect
 	github.com/CycloneDX/cyclonedx-go v0.7.2-0.20230625092137-07e2f29defc3 // indirect
 	github.com/DataDog/zstd v1.4.5 // indirect
@@ -59,6 +67,7 @@ require (
 	github.com/containerd/stargz-snapshotter/estargz v0.14.3 // indirect
 	github.com/containerd/ttrpc v1.2.2 // indirect
 	github.com/containerd/typeurl/v2 v2.1.1 // indirect
+	github.com/cpuguy83/go-docker v0.2.1
 	github.com/cyphar/filepath-securejoin v0.2.3 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/deitch/magic v0.0.0-20230404182410-1ff89d7342da // indirect
@@ -130,10 +139,7 @@ require (
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/saferwall/pe v1.4.4 // indirect
 	github.com/samber/lo v1.38.1 // indirect
-	github.com/sassoftware/go-rpmutils v0.2.0 // indirect
-	github.com/scylladb/go-set v1.0.3-0.20200225121959-cc7b2070d91e // indirect
-	github.com/secure-systems-lab/go-securesystemslib v0.6.0 // indirect
-	github.com/sergi/go-diff v1.3.1 // indirect
+	github.com/secure-systems-lab/go-securesystemslib v0.7.0 // indirect
 	github.com/shibumi/go-pathspec v1.3.0 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/skeema/knownhosts v1.2.0 // indirect
@@ -174,12 +180,12 @@ require (
 	golang.org/x/time v0.3.0 // indirect
 	golang.org/x/tools v0.10.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
-	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
-	google.golang.org/grpc v1.55.0 // indirect
+	google.golang.org/genproto v0.0.0-20230526161137-0005af68ea54 // indirect
+	google.golang.org/grpc v1.57.0
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/project-copacetic/copacetic => github.com/anubhav06/copacetic v0.0.0-20230803113751-8b46a290aece
+// replace github.com/project-copacetic/copacetic => github.com/anubhav06/copacetic kubescape
